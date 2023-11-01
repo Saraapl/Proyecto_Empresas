@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsultaTodas</title>
+</head>
+<body bgcolor="FF89CF">
+    <center> <h1>Mis empresas nacionales</h1></center>
+    <center>
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicacion</th>
+                <th>Correo</th>
+                <th>Descripcion</th>
+            </tr>
+            {% for item in nacionales %}
+            <tr>
+                <td>{{item.nombre}}</td>
+                <td>{{item.ubicacion}}</td>
+                <td>{{item.correo}}</td>
+                <td>{{item.descripcion}}</td>
+
+            </tr>
+             {% endfor %}
+        </table>
+        <br>
+        <br>
+        <center><h1>Mis empresas internacionales</h1></center>
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicacion</th>
+                <th>Correo</th>
+                <th>Descripcion</th>
+            </tr>
+            {% for item in internacionales %}
+            <tr>
+                <td>{{item.nombre}}</td>
+                <td>{{item.ubicacion}}</td>
+                <td>{{item.correo}}</td>
+                <td>{{item.descripcion}}</td>
+
+            </tr>
+             {% endfor %}
+        </table>
+        <br>
+        <br>
+        </table>
+    </center>
+   
+</body>
+</html>

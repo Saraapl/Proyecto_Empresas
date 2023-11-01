@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgregarInternacional</title>
+</head>
+<body bgcolor="C1F796">
+
+    <h1>Ingrese las empresas</h1>
+    <br>
+
+    <form action="/agregarInternacionalCrear" method="post">
+        <ul>
+          <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="empresa_nombre" />
+
+          </li>
+          <br>
+          <li>
+            <label for="mail">Correo:</label>
+            <input type="email" id="mail" name="empresa_correo" />
+     
+          </li>
+          <br>
+          <li>
+            <label for="msg">Ubicacion:</label>
+            <textarea id="text" name="empresa_ubicacion"></textarea>
+      
+          </li>
+          <br>
+          <li>
+            <label for="msg">Descripcion:</label>
+            <textarea id="text" name="empresa_descripcion"></textarea>
+          </li>
+        </ul>
+        <button>enviar</button>
+      </form>
+    
+</body>
+</html>

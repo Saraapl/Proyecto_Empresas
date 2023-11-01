@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultaracional</title>
+</head>
+<body bgcolor="CBE1BC">
+    <form action="/consultarInternacionalPedir" method="post">
+        <ul>
+            <li>
+                <label for="name">Nombre de la empresa a consultar:</label>
+                <input type="text" id="name" name="nombre" />
+                <button type="submit">Enviar</button>
+            </li>
+        </ul>
+    </form>
+       
+    {% if empresa %}
+        <p><strong>Nombre:</strong> {{ empresa.nombre }}</p>
+        <p><strong>Ubicacion:</strong> {{ empresa.ubicacion }}</p>
+        <p><strong>Correo:</strong> {{ empresa.correo }}</p>
+        <p><strong>Descripcion:</strong> {{ empresa.descripcion }}</p>
+    {% endif %}
+
+</body>
+</html>
