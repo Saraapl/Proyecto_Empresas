@@ -5,7 +5,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-import .motor_asyncio
+from motor import motor_asyncio
 
 
 CONNECTION_STRING = 'mongodb://localhost:27017'
